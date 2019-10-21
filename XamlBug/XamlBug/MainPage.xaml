@@ -3,14 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:controls="clr-namespace:XamlBug.Controls"
              mc:Ignorable="d"
              x:Class="XamlBug.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+		<controls:DateTimeControl ButtonPressed="DateTimeControl_ButtonPressed" />
+		<controls:TimeSpanControl ButtonPressed="TimeSpanControl_ButtonPressed" />
+	</StackLayout>
 
 </ContentPage>

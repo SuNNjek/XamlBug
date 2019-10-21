@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace XamlBug
@@ -16,6 +12,16 @@ namespace XamlBug
 		public MainPage()
 		{
 			InitializeComponent();
+		}
+
+		private void DateTimeControl_ButtonPressed(object sender, Controls.ButtonPressedEventArgs<DateTime> e)
+		{
+			Console.WriteLine("Hello from DateTime control");
+		}
+
+		private void TimeSpanControl_ButtonPressed(object sender, Controls.ButtonPressedEventArgs<TimeSpan> e)
+		{
+			Console.WriteLine("Hello from TimeSpan control");
 		}
 	}
 }
